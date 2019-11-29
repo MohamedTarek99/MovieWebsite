@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "Start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -14,4 +15,5 @@
     "express": "^4.17.1",
     "express-session": "^1.17.0"
   }
+  
 }
