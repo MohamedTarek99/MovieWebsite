@@ -1,4 +1,4 @@
-var port = process.env.PORT || 3000; 
+var port = process.env.PO RT || 3000; 
 const express = require('express')
 const app = express()
 const path = require('path')
@@ -16,12 +16,9 @@ var usernames = fs.readFileSync('pass.json')
 var watchlist=fs.readFileSync('watchlist.json')
 var allmovies=[{name:'The Godfather',source:'godfather'},{name:'The Godfather:Part II',source:'godfather2'},{name:'Fight Club',source:'fightclub'},{name:'The Dark Knight',source:'darkknight'},{name:'The Conjuring',source:'conjuring'},{name:'Scream',source:'scream'}]
 var userwatchlist=[]
-
-
 app.get('/', function (req, res) {
   res.render('login')
 })
-
 app.post('/register', function (req, res, next) {
   if(req.body.username==""){
     res.send('<p>USERNAME REQUIRED</p>') 
